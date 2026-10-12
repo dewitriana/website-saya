@@ -1,0 +1,212 @@
+body {
+background-color: pink;
+font-family: Arial, sans-serif;
+color: #000000; 
+margin: 0;
+padding: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 30px auto;
+	padding: 30px;
+	background-color: white;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+h1 {
+	color: green;
+	text-align: center;
+	margin-bottom: 20px;
+}
+h2 {
+	color: green;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.7;
+	text-align: justify;
+}
+
+.identitas {
+	width: auto;
+	
+}
+
+.kolom-foto {
+	vertical-align: top;
+	padding-right: 30px;
+}
+
+.kolom-identitas {
+	vertical-align: top;
+}
+
+.foto-profil {
+	width: 200px;
+	height: 250px;
+	object-fit: cover;
+	border: 2px solid #ccc;
+	padding: 2px;
+}
+
+.data-identitas td {
+	padding: 5px;
+}
+.tabel-matakuliah {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.tabel-matakuliah th {
+	background-color: #00509e;
+	color: white;
+	padding: 10px;
+	border: 1px solid #cccccc; 
+}
+
+.tabel-matakuliah td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+a {
+	color: #0066cc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+form {
+	background-color: #FFB6C1;
+	padding: 20px;
+	margin-top: 20px;
+
+	border: 1px solid #cccccc;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: vertical;
+}
+
+button {
+	background-color: #00509e;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	margin-right: 10px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #FFB6C1;
+}
+button :hover {
+	background-color: #003366;
+}
+
+.footer {
+	text-align: center;
+	color: #FFB6C1;
+	margin-top: 30px;
+}
+.grid-informasi {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gab:20px;
+	margin-top: 25px;
+	margin: 25px;
+}
+
+.card {
+	background-color: cadetblue;
+	padding: 20px;
+	border: 1px solid #dddddd;
+	border-radius: 8px;
+}
+.card h2 {
+	margin-top: 0;
+	margin-bottom: 15px;
+
+}
+.card p {
+	text-emphasis: justify;
+	line-height: 1.6;
+}
+.table{
+	width: 100x;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 10x;
+	border: 1px solid #dddddd;
+	text-align: left;
+}
+th {
+	font-weight: bold;
+}
+
+@media	(max-width: 768px) {
+
+	.container {
+		width: 94%;
+		max-width: 10px auto;
+		padding: 15px;
+	}
+
+	h1 {font-size: 20px}
+	h2 { font-size: 19px}
+	p { font-size: 14px;line-height: 1.6;}
+
+	.identitas > tbody > tr {
+		display: flex;
+		flex-direction: column;
+	}
+	.kolom-foto{
+		width: 100%;
+		padding-right: 0;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.kolom-identitas {
+		width: 100%;
+		padding-right: 0;
+	}
+	.kolom-identitas h2 {
+		max-resolution: 0;
+		text-align: center;
+	}
+	.foto-profil {
+		width: 130px;
+	}
+	.data-identitas td {
+		padding: 4px 2px;
+		font-size: 13px;
+		vertical-align: top;
+	}
+	.grid-informasi {
+		grid-template-columns: 1fr;
+		gop: 15px;
+	}
+}
